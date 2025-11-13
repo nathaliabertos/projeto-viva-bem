@@ -4,6 +4,10 @@
   <i>Projeto desenvolvido para o curso de Desenvolvimento Full Stack da Vai Na Web.</i>
 </p>
 
+<p align="center">
+  <i>Projeto para o curso Vai Na Web</i><br>
+  🔗 <a href="https://nathaliabertos.github.io/projeto-viva-bem/">Acesse o site online</a>
+</p>
 ---
 
 ## 🚀 Sobre o Projeto
