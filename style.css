@@ -519,16 +519,16 @@ main {
   -webkit-text-fill-color: transparent;
   color: transparent;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 2.2rem;
   font-weight: 700;
 }
 .alert-box .alert {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
-  font-family: "Roboto", sans-serif;
 }
 .alert-box .alert > div {
   width: 450px;
@@ -536,22 +536,26 @@ main {
   border-radius: 20px;
   padding: 20px 24px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+  text-align: left;
 }
-.alert-box img {
-  width: 28px;
-  height: 28px;
+.alert-box .alert > div img {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
 }
-.alert-box h2 {
+.alert-box .alert > div h2 {
   font-size: 1.2rem;
   font-weight: 700;
+  flex: 1 1 auto;
 }
-.alert-box p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+.alert-box .alert > div p {
+  font-size: 0.8rem;
+  line-height: 1.4;
   margin-top: 4px;
+  flex: 1 1 100%;
 }
 .alert-box .box-info-1 {
   background-color: #f9d5e5;
@@ -577,15 +581,24 @@ main {
   }
   .alert-box h1 {
     font-size: 2rem;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+  }
+  .alert-box .alert {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   .alert-box .alert > div {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
+    min-height: auto;
     padding: 20px;
-    gap: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 }
-/*MOBILE*/
+/* MOBILE*/
 @media (max-width: 767px) and (min-width: 300px) {
   .alert-box {
     padding: 32px 16px;
@@ -602,22 +615,24 @@ main {
   .alert-box .alert > div {
     width: 100%;
     max-width: 330px;
+    min-height: auto;
     padding: 20px;
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    text-align: center;
     gap: 10px;
   }
-  .alert-box img {
+  .alert-box .alert > div img {
     width: 32px;
     height: 32px;
   }
-  .alert-box h2 {
+  .alert-box .alert > div h2 {
     font-size: 1.1rem;
     margin-top: 4px;
   }
-  .alert-box p {
+  .alert-box .alert > div p {
     font-size: 0.9rem;
+    flex: initial;
   }
 }
 footer {
